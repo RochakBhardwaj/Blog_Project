@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color--bg1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+
+  .name {
+    font-family: 'Great Vibes', cursive;
+    color: var(--color--bg2);
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  .auth {
+    display: flex;
+
+    .homebtn {
+      text-decoration: none;
+      margin: 20px;
+      border: 1px solid;
+      padding: 10px;
+      background-color: var(--color--bg2);
+      color: var(--color--bg1);
+
+      &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  .homebtn {
+    padding: 5px;
+  }
+}

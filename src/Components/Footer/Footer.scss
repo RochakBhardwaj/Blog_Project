@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 80px;
+  background-color: var(--color--bg1);
+  color: var(--color--bg2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+
+  .footer-text {
+    font-size: 25px;
+    font-family: 'serif', Roboto;
+    padding: 10px;
+  }
+  .profile {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+}

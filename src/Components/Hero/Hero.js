@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import Particles from 'react-particles-js';
-import Footer from '../Footer/Footer';
 import ClipLoader from 'react-spinners/ClipLoader';
 import { displayApi } from '../../api';
 import Blog from './Blog/Blog';
@@ -18,7 +17,7 @@ const Hero = () => {
   const handleDisplay = async () => {
     setloading(true);
     const data = await displayApi();
-    setPost(data.posts);
+    if (data.posts) setPost(data.posts);
     setloading(false);
   };
   if (loading)
@@ -81,7 +80,6 @@ const Hero = () => {
           ))}
         </div>
       </div>
-      <Footer />
     </>
   );
 };
